@@ -10,7 +10,7 @@ export const Actividad = sequelize.define('actividad', {
         type: DataTypes.UUID,
         allowNull: false,
         references: {
-            model: 'Usuario',
+            model: 'usuario',
             key: 'idUsuario'
         },
         onDelete: 'CASCADE',

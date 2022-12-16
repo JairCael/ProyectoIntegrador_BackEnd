@@ -11,7 +11,7 @@ export const Horario_Asistencia = sequelize.define('horario_asistencia', {
         type: DataTypes.UUID,
         allowNull: false,
         references: {
-            model: 'Actividad',
+            model: 'actividad',
             key: 'idActividad'
         },
         onDelete: 'CASCADE',
@@ -21,7 +21,7 @@ export const Horario_Asistencia = sequelize.define('horario_asistencia', {
         type: DataTypes.UUID,
         allowNull: false,
         references: {
-            model: 'Actividad',
+            model: 'actividad',
             key: 'idUsuario'
         },
         onDelete: 'CASCADE',
@@ -43,7 +43,7 @@ export const Horario_Asistencia = sequelize.define('horario_asistencia', {
         type: DataTypes.INTEGER,
         defaultValue: null,
         references: {
-            model: 'Estado',
+            model: 'estado',
             key: 'idEstado'
         },
         onDelete: 'CASCADE',
